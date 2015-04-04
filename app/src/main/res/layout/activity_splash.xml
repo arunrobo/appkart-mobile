@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="#00ab60"
+    android:padding="20dp"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splash" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:text="AppKart User Login"/>
+
+            <EditText
+            android:id="@+id/regName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phonenumber"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:inputType="number" />
+
+            <EditText
+            android:id="@+id/regEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login Me In"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:drawableLeft="@drawable/ic_action_secure"
+                />
+
+    </LinearLayout>
+
+</RelativeLayout>

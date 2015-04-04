@@ -1,0 +1,2 @@
+C:\Users\Arun\AndroidStudioProjects\TabsWithSwipeGesture\app\build\intermediates\classes\debug
+C:\Users\Arun\AndroidStudioProjects\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-d6d0b2d9e7701f73e85c8e05edca664c6620627e.jar

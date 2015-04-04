@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.tabsswipe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- Splash screen -->
+        <activity
+            android:name="info.androidhive.tabsswipe.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Main activity -->
+        <activity
+            android:name="info.androidhive.tabsswipe.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.widget.SearchView"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <!-- About appkart page: this to configure home page from subpage for top back button -->
+        <activity
+            android:name="info.androidhive.tabsswipe.aboutAppkart"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="info.androidhive.tabsswipe.MainActivity"
+                android:value="info.androidhive.tabsswipe.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="info.androidhive.tabsswipe.loginAppkart"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="info.androidhive.tabsswipe.MainActivity"
+                android:value="info.androidhive.tabsswipe.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="info.androidhive.tabsswipe.registerAppkart"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="info.androidhive.tabsswipe.MainActivity"
+                android:value="info.androidhive.tabsswipe.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="info.androidhive.tabsswipe.settingAppkart"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="info.androidhive.tabsswipe.MainActivity"
+                android:value="info.androidhive.tabsswipe.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="info.androidhive.tabsswipe.recommendationAppkart"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="info.androidhive.tabsswipe.MainActivity"
+                android:value="info.androidhive.tabsswipe.MainActivity" />
+        </activity>
+
+     </application>
+
+
+
+</manifest>

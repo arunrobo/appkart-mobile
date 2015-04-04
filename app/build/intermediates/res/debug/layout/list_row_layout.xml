@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:minHeight="50dp"
+android:orientation="horizontal"
+android:padding="5dip">
+
+<!--  ListRow Left sied Thumbnail image -->
+<LinearLayout android:id="@+id/thumbnail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dip"
+    android:layout_alignParentLeft="true"
+    android:layout_marginRight="5dip">
+
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/rihanna"/>
+    </LinearLayout>
+
+    <!-- Title Of App-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="@drawable/list_item_text_selector"
+        android:typeface="sans" />
+
+    <!-- Publisher Name -->
+    <TextView
+        android:id="@+id/reporter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#969696"
+        android:text=""
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reporter"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#00ab60"
+        android:text=""
+        android:textSize="12sp" />
+
+    <!-- download icon
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/download"
+        android:background="#00000000"/>-->
+
+    !-- Rating Duration -->
+    <RatingBar
+        android:id="@+id/ratemyapp"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        />
+
+</RelativeLayout><!-- From: file:/C:/Users/Arun/AndroidStudioProjects/TabsWithSwipeGesture/app/src/main/res/layout/list_row_layout.xml -->

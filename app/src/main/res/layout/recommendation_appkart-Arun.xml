@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:text="Recommend App name to your friend"/>
+
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by friends name"
+        android:layout_marginBottom="10dp"
+        android:drawableRight="@drawable/ic_action_person_d"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/regPhoneNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by friends contact number"
+        android:layout_marginBottom="10dp"
+        android:drawableRight="@drawable/ic_action_phone"
+        android:inputType="text" />
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:text="Favorite Contact"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="7dip"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+
+        <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/rihanna"
+            />
+    </LinearLayout>
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/regName2"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:text="Contact Name"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_counter"
+        android:textSize="18dp" />
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/regPhoneNumber2"
+        android:layout_width="wrap_content"
+        android:text="+65 9821 1115"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_below="@+id/regName2"
+        android:textSize="16dp" />
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="bottom"
+        android:gravity="center|bottom"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommend/Gift to my Friend"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_action_good"
+            />
+    </LinearLayout>
+
+</LinearLayout>

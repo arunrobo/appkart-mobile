@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="7dip"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <LinearLayout android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip">
+            <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:src="@drawable/whatsapp"/>
+        </LinearLayout>
+
+    <!-- Title Of App-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whatsapp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="@drawable/list_item_text_selector"
+        android:typeface="sans" />
+
+    <!-- Publisher Name -->
+    <TextView
+        android:id="@+id/reporter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="0dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#969696"
+        android:text="Whatsapp Inc"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reporter"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#00ab60"
+        android:text="Free"
+        android:textSize="15sp" />
+
+    !-- Rating Duration -->
+    <RatingBar
+        android:id="@+id/ratemyapp"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/descriptiontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:text="Description"
+        />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="0dp"
+        android:padding="7dip"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/descriptiondetails"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:autoLink="web"
+            android:textSize="13dp"
+            android:text="Sed gravida arcu sodales enim tincidunt, eget elementum ante tincidunt. Aenean ullamcorper risus sit amet ex posuere auctor. Sed sit amet efficitur nunc. Suspendisse faucibus dolor vel malesuada dapibus. Fusce interdum metus in finibus porttitor. Donec nibh lectus, pellentesque ac libero eu, sagittis placerat risus. Integer accumsan quis nunc vitae bibendum. Vestibulum eleifend rutrum urna, at cursus ligula. Vestibulum lacinia, libero et viverra vehicula, nunc lectus feugiat ipsum, vel posuere dui ex nec sem. Donec eu dignissim orci. Integer ex sapien, pharetra id lectus in, consequat dignissim lacus. Fusce vitae metus eget augue convallis tristique. Etiam malesuada, magna eu faucibus pretium, lorem orci condimentum lorem, eget imperdiet lacus dui eu ante."
+            />
+    </ScrollView>
+
+    <!-- button will come here -->
+    <LinearLayout android:id="@+id/actionbutton"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:gravity="center|bottom"
+        android:layout_weight="4.8">
+
+        <Button android:id="@+id/recommendbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_action_group"
+            android:text="@string/recommend"/>
+
+        <Button android:id="@+id/download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_action_download"
+            android:text="@string/download">
+         </Button>
+    </LinearLayout>
+
+</LinearLayout>
+
+
